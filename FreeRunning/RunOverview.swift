@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  RunOverview.swift
 //  FreeRunning
 //
 //  Created by Naziyok, Tolga on 29.10.23.
@@ -8,7 +8,7 @@
 import SwiftUI
 import SwiftData
 
-struct ContentView: View {
+struct RunOverview: View {
     @Environment(\.modelContext) private var modelContext
     @Query private var items: [Item]
 
@@ -56,6 +56,6 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    RunOverview()
         .modelContainer(for: Item.self, inMemory: true)
 }

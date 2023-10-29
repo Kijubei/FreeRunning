@@ -25,7 +25,7 @@ struct FreeRunningApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RunStarter()
         }
         .modelContainer(sharedModelContainer)
     }
